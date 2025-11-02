@@ -1,0 +1,39 @@
+cd ~/gpu_forecasting_project
+nano requirements.txt
+```
+
+Replace everything with:
+```
+# Core ML/DL
+torch>=2.0.0
+transformers>=4.35.0
+accelerate
+diffusers
+
+# GPU Monitoring
+nvidia-ml-py3
+pynvml
+
+# Data Science
+pandas
+numpy
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+
+# System
+psutil
+joblib
+aiohttp
+
+# Inference Engines
+vllm
+tensorrt-llm
+
+# Image Processing (for CLIP)
+Pillow
+
+# Optional but used
+flash-attn

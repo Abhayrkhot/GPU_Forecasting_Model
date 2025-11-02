@@ -1,0 +1,25 @@
+================================================================================
+GPU PERFORMANCE FORECASTING FOR GEN AI MODELS
+Comparative Analysis Report - A100 GPU Cluster
+================================================================================
+
+Report Generated: 2025-11-01 19:27:12
+Total Benchmark Samples: 12
+Inference Engines Tested: PyTorch
+Concurrent Request Range: 1 - 100
+Sequence Length Range: 128 - 256
+
+================================================================================
+
+INFERENCE ENGINE COMPARISON
+--------------------------------------------------------------------------------
+
+PyTorch:
+  Average Latency: 34569.03 ms
+  Average Throughput: 171.88 tokens/sec
+  Average GPU Utilization: 27.82%
+  Average Memory Usage: 1.37 GB
+  Peak Memory Usage: 1.44 GB
+  Samples: 12
+
+================================================================================
