@@ -1,0 +1,117 @@
+{
+  "gpu": "a6000",
+  "meta": {
+    "cpu": "AMD EPYC 7763 64-Core Processor",
+    "dtype": "bfloat16",
+    "gpu_key": "rtx-a6000",
+    "gpu_name": "NVIDIA RTX A6000",
+    "hf_id": "Qwen/Qwen3-4B",
+    "job": "12065749",
+    "max_model_len": 8192,
+    "max_num_batched_tokens": 2048,
+    "max_num_seqs": 256,
+    "model": "qwen3-4b",
+    "node": "d3232",
+    "sif": "vllm.sif",
+    "vllm_args": "--max-num-batched-tokens 2048 --max-num-seqs 256 --max-model-len 8192 --generation-config vllm"
+  },
+  "microbench": {
+    "capability": [
+      8,
+      6
+    ],
+    "copy_bandwidth": 682722579002.2262,
+    "dtype": "torch.bfloat16",
+    "gemm_flops": 127127381971995.86,
+    "gemm_flops_by_n": {
+      "4096": 127127381971995.86,
+      "8192": 113878410052945.19
+    },
+    "name": "NVIDIA RTX A6000"
+  },
+  "model": "qwen3-4b",
+  "plan": [
+    {
+      "frac": 0.4,
+      "kind": "conv",
+      "name": "conv_r2",
+      "rate": 2.0,
+      "requests": 180,
+      "sat": 5.0,
+      "seconds": 89.5
+    },
+    {
+      "frac": 0.7,
+      "kind": "conv",
+      "name": "conv_r3.5",
+      "rate": 3.5,
+      "requests": 315,
+      "sat": 5.0,
+      "seconds": 89.71428571428572
+    },
+    {
+      "frac": 0.9,
+      "kind": "conv",
+      "name": "conv_r4.5",
+      "rate": 4.5,
+      "requests": 405,
+      "sat": 5.0,
+      "seconds": 89.77777777777779
+    },
+    {
+      "frac": 0.5,
+      "kind": "code",
+      "name": "code_r0.327",
+      "rate": 0.327,
+      "requests": 60,
+      "sat": 0.6548736321502949,
+      "seconds": 180.42813455657495
+    },
+    {
+      "frac": 0.85,
+      "kind": "code",
+      "name": "code_r0.557",
+      "rate": 0.557,
+      "requests": 60,
+      "sat": 0.6548736321502949,
+      "seconds": 105.9245960502693
+    }
+  ],
+  "server": {
+    "available_kv_gib": 34.2,
+    "cudagraph_gib": 0.55,
+    "kv_tokens": 244224,
+    "vllm_version": "0.34.0",
+    "weights_gib": 7.56
+  },
+  "windows": {
+    "code_r0.327": [
+      1795377014.347459,
+      1795377196.7731698
+    ],
+    "code_r0.557": [
+      1795377198.9556065,
+      1795377306.9878287
+    ],
+    "conv_r2": [
+      1795376681.8827438,
+      1795376781.739386
+    ],
+    "conv_r3.5": [
+      1795376784.0902367,
+      1795376889.9959729
+    ],
+    "conv_r4.5": [
+      1795376892.414429,
+      1795377011.7111363
+    ],
+    "profile": [
+      1795376275.9020746,
+      1795376661.6254988
+    ],
+    "smoke": [
+      1795376267.6679957,
+      1795376273.4844766
+    ]
+  }
+}

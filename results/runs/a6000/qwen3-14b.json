@@ -1,0 +1,91 @@
+{
+  "gpu": "a6000",
+  "meta": {
+    "cpu": "AMD EPYC 7413 24-Core Processor",
+    "dtype": "bfloat16",
+    "gpu_key": "rtx-a6000",
+    "gpu_name": "NVIDIA RTX A6000",
+    "hf_id": "Qwen/Qwen3-14B",
+    "job": "12065189",
+    "max_model_len": 8192,
+    "max_num_batched_tokens": 2048,
+    "max_num_seqs": 256,
+    "model": "qwen3-14b",
+    "node": "d3168",
+    "sif": "vllm.sif",
+    "vllm_args": "--max-num-batched-tokens 2048 --max-num-seqs 256 --max-model-len 8192 --generation-config vllm"
+  },
+  "microbench": {
+    "capability": [
+      8,
+      6
+    ],
+    "copy_bandwidth": 719866427655.4779,
+    "dtype": "torch.bfloat16",
+    "gemm_flops": 126887327586606.89,
+    "gemm_flops_by_n": {
+      "4096": 126887327586606.89,
+      "8192": 112222009972859.58
+    },
+    "name": "NVIDIA RTX A6000"
+  },
+  "model": "qwen3-14b",
+  "plan": [
+    {
+      "frac": 0.4,
+      "kind": "conv",
+      "name": "conv_r0.621",
+      "rate": 0.621,
+      "requests": 60,
+      "sat": 1.5529501118123525,
+      "seconds": 95.00805152979066
+    },
+    {
+      "frac": 0.7,
+      "kind": "conv",
+      "name": "conv_r1.09",
+      "rate": 1.087,
+      "requests": 97,
+      "sat": 1.5529501118123525,
+      "seconds": 88.31646734130635
+    },
+    {
+      "frac": 0.9,
+      "kind": "conv",
+      "name": "conv_r1.4",
+      "rate": 1.398,
+      "requests": 125,
+      "sat": 1.5529501118123525,
+      "seconds": 88.69814020028613
+    }
+  ],
+  "server": {
+    "available_kv_gib": 13.49,
+    "cudagraph_gib": 0.61,
+    "kv_tokens": 83968,
+    "vllm_version": "0.34.0",
+    "weights_gib": 27.52
+  },
+  "windows": {
+    "conv_r0.621": [
+      1795371931.5263853,
+      1795372041.7040882
+    ],
+    "conv_r1.09": [
+      1795372044.0625048,
+      1795372152.4334419
+    ],
+    "conv_r1.4": [
+      1795372154.5866463,
+      1795372268.6187859
+    ],
+    "profile": [
+      1795371254.728004,
+      1795371913.6972241
+    ],
+    "smoke": [
+      1795371245.6607223,
+      1795371252.580123
+    ]
+  }
+}

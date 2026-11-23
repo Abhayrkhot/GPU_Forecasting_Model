@@ -1,0 +1,117 @@
+{
+  "gpu": "a100-80g",
+  "meta": {
+    "cpu": "Intel(R) Xeon(R) Platinum 8468",
+    "dtype": "bfloat16",
+    "gpu_key": "a100-sxm4-80gb",
+    "gpu_name": "NVIDIA A100-SXM4-80GB",
+    "hf_id": "Qwen/Qwen3-30B-A3B",
+    "job": "12065190",
+    "max_model_len": 8192,
+    "max_num_batched_tokens": 2048,
+    "max_num_seqs": 256,
+    "model": "qwen3-30b-a3b",
+    "node": "d3204",
+    "sif": "vllm.sif",
+    "vllm_args": "--max-num-batched-tokens 2048 --max-num-seqs 256 --max-model-len 8192 --generation-config vllm"
+  },
+  "microbench": {
+    "capability": [
+      8,
+      0
+    ],
+    "copy_bandwidth": 1752767550106.2212,
+    "dtype": "torch.bfloat16",
+    "gemm_flops": 248748981528858.25,
+    "gemm_flops_by_n": {
+      "4096": 218468676690972.0,
+      "8192": 248748981528858.25
+    },
+    "name": "NVIDIA A100-SXM4-80GB"
+  },
+  "model": "qwen3-30b-a3b",
+  "plan": [
+    {
+      "frac": 0.4,
+      "kind": "conv",
+      "name": "conv_r1.73",
+      "rate": 1.732,
+      "requests": 155,
+      "sat": 4.329821616800327,
+      "seconds": 88.91454965357968
+    },
+    {
+      "frac": 0.7,
+      "kind": "conv",
+      "name": "conv_r3.03",
+      "rate": 3.031,
+      "requests": 272,
+      "sat": 4.329821616800327,
+      "seconds": 89.40943582975915
+    },
+    {
+      "frac": 0.9,
+      "kind": "conv",
+      "name": "conv_r3.9",
+      "rate": 3.897,
+      "requests": 350,
+      "sat": 4.329821616800327,
+      "seconds": 89.55606877084936
+    },
+    {
+      "frac": 0.5,
+      "kind": "code",
+      "name": "code_r0.316",
+      "rate": 0.316,
+      "requests": 60,
+      "sat": 0.6317314588272342,
+      "seconds": 186.70886075949366
+    },
+    {
+      "frac": 0.85,
+      "kind": "code",
+      "name": "code_r0.537",
+      "rate": 0.537,
+      "requests": 60,
+      "sat": 0.6317314588272342,
+      "seconds": 109.86964618249533
+    }
+  ],
+  "server": {
+    "available_kv_gib": 13.62,
+    "cudagraph_gib": 0.86,
+    "kv_tokens": 138240,
+    "vllm_version": "0.34.0",
+    "weights_gib": 56.88
+  },
+  "windows": {
+    "code_r0.316": [
+      1795371941.720452,
+      1795372130.3180768
+    ],
+    "code_r0.537": [
+      1795372132.420658,
+      1795372244.1802733
+    ],
+    "conv_r1.73": [
+      1795371639.3408713,
+      1795371738.592512
+    ],
+    "conv_r3.03": [
+      1795371740.6802366,
+      1795371838.060416
+    ],
+    "conv_r3.9": [
+      1795371840.1627746,
+      1795371939.6159408
+    ],
+    "profile": [
+      1795371287.730957,
+      1795371618.975896
+    ],
+    "smoke": [
+      1795371280.249069,
+      1795371285.6386278
+    ]
+  }
+}

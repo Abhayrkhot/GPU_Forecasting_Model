@@ -1,0 +1,275 @@
+[
+ {
+  "model": "qwen2.5-0.5b",
+  "gpu": "a100-80g",
+  "measured": 6045696,
+  "predicted": 6003392,
+  "rel_err": -0.006997374661246613
+ },
+ {
+  "model": "qwen2.5-1.5b",
+  "gpu": "a100-80g",
+  "measured": 2510848,
+  "predicted": 2498544,
+  "rel_err": -0.0049003364600326265
+ },
+ {
+  "model": "qwen2.5-14b",
+  "gpu": "a100-80g",
+  "measured": 225280,
+  "predicted": 230000,
+  "rel_err": 0.020951704545454544
+ },
+ {
+  "model": "qwen2.5-32b",
+  "gpu": "a100-80g",
+  "measured": 31232,
+  "predicted": 34400,
+  "rel_err": 0.1014344262295082
+ },
+ {
+  "model": "qwen2.5-3b",
+  "gpu": "a100-80g",
+  "measured": 1865728,
+  "predicted": 1859232,
+  "rel_err": -0.0034817508232711306
+ },
+ {
+  "model": "qwen2.5-7b",
+  "gpu": "a100-80g",
+  "measured": 1034240,
+  "predicted": 1035904,
+  "rel_err": 0.0016089108910891088
+ },
+ {
+  "model": "qwen3-0.6b",
+  "gpu": "a100-80g",
+  "measured": 645632,
+  "predicted": 641712,
+  "rel_err": -0.006071570182394925
+ },
+ {
+  "model": "qwen3-1.7b",
+  "gpu": "a100-80g",
+  "measured": 625152,
+  "predicted": 621792,
+  "rel_err": -0.005374692874692875
+ },
+ {
+  "model": "qwen3-14b",
+  "gpu": "a100-80g",
+  "measured": 271360,
+  "predicted": 275648,
+  "rel_err": 0.01580188679245283
+ },
+ {
+  "model": "qwen3-30b-a3b",
+  "gpu": "a100-80g",
+  "measured": 138240,
+  "predicted": 139872,
+  "rel_err": 0.011805555555555555
+ },
+ {
+  "model": "qwen3-32b",
+  "gpu": "a100-80g",
+  "measured": 31232,
+  "predicted": 34640,
+  "rel_err": 0.1091188524590164
+ },
+ {
+  "model": "qwen3-4b",
+  "gpu": "a100-80g",
+  "measured": 453120,
+  "predicted": 452272,
+  "rel_err": -0.0018714689265536724
+ },
+ {
+  "model": "qwen3-8b",
+  "gpu": "a100-80g",
+  "measured": 393728,
+  "predicted": 395696,
+  "rel_err": 0.004998374512353706
+ },
+ {
+  "model": "qwen2.5-0.5b",
+  "gpu": "a6000",
+  "measured": 3543040,
+  "predicted": 3485888,
+  "rel_err": -0.01613078034682081
+ },
+ {
+  "model": "qwen2.5-1.5b",
+  "gpu": "a6000",
+  "measured": 1439744,
+  "predicted": 1419616,
+  "rel_err": -0.013980263157894737
+ },
+ {
+  "model": "qwen2.5-14b",
+  "gpu": "a6000",
+  "measured": 69120,
+  "predicted": 72656,
+  "rel_err": 0.05115740740740741
+ },
+ {
+  "model": "qwen2.5-3b",
+  "gpu": "a6000",
+  "measured": 1032192,
+  "predicted": 1020064,
+  "rel_err": -0.011749751984126984
+ },
+ {
+  "model": "qwen2.5-7b",
+  "gpu": "a6000",
+  "measured": 497664,
+  "predicted": 496432,
+  "rel_err": -0.002475565843621399
+ },
+ {
+  "model": "qwen3-0.6b",
+  "gpu": "a6000",
+  "measured": 377344,
+  "predicted": 371984,
+  "rel_err": -0.014204545454545454
+ },
+ {
+  "model": "qwen3-1.7b",
+  "gpu": "a6000",
+  "measured": 356864,
+  "predicted": 352064,
+  "rel_err": -0.013450502152080344
+ },
+ {
+  "model": "qwen3-14b",
+  "gpu": "a6000",
+  "measured": 83968,
+  "predicted": 86832,
+  "rel_err": 0.034108231707317076
+ },
+ {
+  "model": "qwen3-4b",
+  "gpu": "a6000",
+  "measured": 244224,
+  "predicted": 242480,
+  "rel_err": -0.007140985324947589
+ },
+ {
+  "model": "qwen3-8b",
+  "gpu": "a6000",
+  "measured": 185344,
+  "predicted": 185904,
+  "rel_err": 0.0030214088397790056
+ },
+ {
+  "model": "qwen2.5-0.5b",
+  "gpu": "h200",
+  "measured": 10629120,
+  "predicted": 10621440,
+  "rel_err": -0.000722543352601156
+ },
+ {
+  "model": "qwen2.5-1.5b",
+  "gpu": "h200",
+  "measured": 4474880,
+  "predicted": 4472928,
+  "rel_err": -0.00043621281464530895
+ },
+ {
+  "model": "qwen2.5-14b",
+  "gpu": "h200",
+  "measured": 515584,
+  "predicted": 516272,
+  "rel_err": 0.0013344091360476663
+ },
+ {
+  "model": "qwen2.5-32b",
+  "gpu": "h200",
+  "measured": 248832,
+  "predicted": 247024,
+  "rel_err": -0.007265946502057613
+ },
+ {
+  "model": "qwen2.5-3b",
+  "gpu": "h200",
+  "measured": 3393536,
+  "predicted": 3392400,
+  "rel_err": -0.0003347540736270368
+ },
+ {
+  "model": "qwen2.5-7b",
+  "gpu": "h200",
+  "measured": 2022400,
+  "predicted": 2014992,
+  "rel_err": -0.003662974683544304
+ },
+ {
+  "model": "qwen3-0.6b",
+  "gpu": "h200",
+  "measured": 1136128,
+  "predicted": 1137280,
+  "rel_err": 0.001013970256872465
+ },
+ {
+  "model": "qwen3-1.7b",
+  "gpu": "h200",
+  "measured": 1116160,
+  "predicted": 1116176,
+  "rel_err": 1.4334862385321102e-05
+ },
+ {
+  "model": "qwen3-14b",
+  "gpu": "h200",
+  "measured": 619520,
+  "predicted": 618416,
+  "rel_err": -0.0017820247933884297
+ },
+ {
+  "model": "qwen3-30b-a3b",
+  "gpu": "h200",
+  "measured": 706560,
+  "predicted": 717248,
+  "rel_err": 0.015126811594202899
+ },
+ {
+  "model": "qwen3-32b",
+  "gpu": "h200",
+  "measured": 247808,
+  "predicted": 248032,
+  "rel_err": 0.0009039256198347108
+ },
+ {
+  "model": "qwen3-4b",
+  "gpu": "h200",
+  "measured": 835072,
+  "predicted": 835808,
+  "rel_err": 0.000881361128142244
+ },
+ {
+  "model": "qwen3-8b",
+  "gpu": "h200",
+  "measured": 778752,
+  "predicted": 778080,
+  "rel_err": -0.0008629191321499013
+ },
+ {
+  "model": "qwen2.5-0.5b",
+  "gpu": "h200-nvl",
+  "measured": 10629120,
+  "predicted": 10621440,
+  "rel_err": -0.000722543352601156
+ },
+ {
+  "model": "qwen2.5-3b",
+  "gpu": "h200-nvl",
+  "measured": 3393536,
+  "predicted": 3392400,
+  "rel_err": -0.0003347540736270368
+ },
+ {
+  "model": "qwen3-8b",
+  "gpu": "h200-nvl",
+  "measured": 778752,
+  "predicted": 778080,
+  "rel_err": -0.0008629191321499013
+ }
+]
