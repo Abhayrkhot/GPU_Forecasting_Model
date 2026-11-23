@@ -1,0 +1,117 @@
+{
+  "gpu": "h200-nvl",
+  "meta": {
+    "cpu": "AMD EPYC 9455 48-Core Processor",
+    "dtype": "bfloat16",
+    "gpu_key": "h200-nvl",
+    "gpu_name": "NVIDIA H200 NVL",
+    "hf_id": "Qwen/Qwen3-8B",
+    "job": "12065865",
+    "max_model_len": 8192,
+    "max_num_batched_tokens": 8192,
+    "max_num_seqs": 1024,
+    "model": "qwen3-8b",
+    "node": "d4077",
+    "sif": "vllm.sif",
+    "vllm_args": "--max-num-batched-tokens 8192 --max-num-seqs 1024 --max-model-len 8192 --generation-config vllm"
+  },
+  "microbench": {
+    "capability": [
+      9,
+      0
+    ],
+    "copy_bandwidth": 4081658932429.5967,
+    "dtype": "torch.bfloat16",
+    "gemm_flops": 708227944666291.4,
+    "gemm_flops_by_n": {
+      "4096": 708227944666291.4,
+      "8192": 706815048620318.6
+    },
+    "name": "NVIDIA H200 NVL"
+  },
+  "model": "qwen3-8b",
+  "plan": [
+    {
+      "frac": 0.4,
+      "kind": "conv",
+      "name": "conv_r8.14",
+      "rate": 8.136,
+      "requests": 732,
+      "sat": 20.33972160541524,
+      "seconds": 89.84759095378566
+    },
+    {
+      "frac": 0.7,
+      "kind": "conv",
+      "name": "conv_r14.2",
+      "rate": 14.238,
+      "requests": 1200,
+      "sat": 20.33972160541524,
+      "seconds": 84.21126562719483
+    },
+    {
+      "frac": 0.9,
+      "kind": "conv",
+      "name": "conv_r18.3",
+      "rate": 18.306,
+      "requests": 1200,
+      "sat": 20.33972160541524,
+      "seconds": 65.49765104337375
+    },
+    {
+      "frac": 0.5,
+      "kind": "code",
+      "name": "code_r2.5",
+      "rate": 2.5,
+      "requests": 225,
+      "sat": 5.0,
+      "seconds": 89.6
+    },
+    {
+      "frac": 0.85,
+      "kind": "code",
+      "name": "code_r4.25",
+      "rate": 4.25,
+      "requests": 382,
+      "sat": 5.0,
+      "seconds": 89.6470588235294
+    }
+  ],
+  "server": {
+    "available_kv_gib": 107.74,
+    "cudagraph_gib": 0.68,
+    "kv_tokens": 778752,
+    "vllm_version": "0.34.0",
+    "weights_gib": 15.27
+  },
+  "windows": {
+    "code_r2.5": [
+      1795379721.6539934,
+      1795379820.129735
+    ],
+    "code_r4.25": [
+      1795379822.6422186,
+      1795379921.243033
+    ],
+    "conv_r14.2": [
+      1795379549.5117142,
+      1795379640.4168608
+    ],
+    "conv_r18.3": [
+      1795379642.7266927,
+      1795379719.145199
+    ],
+    "conv_r8.14": [
+      1795379450.809885,
+      1795379547.149192
+    ],
+    "profile": [
+      1795379161.6233592,
+      1795379437.8401608
+    ],
+    "smoke": [
+      1795379154.126665,
+      1795379159.0065696
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "gpu": "a6000",
+  "meta": {
+    "cpu": "AMD EPYC 7413 24-Core Processor",
+    "dtype": "bfloat16",
+    "gpu_key": "rtx-a6000",
+    "gpu_name": "NVIDIA RTX A6000",
+    "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "job": "12065189",
+    "max_model_len": 8192,
+    "max_num_batched_tokens": 2048,
+    "max_num_seqs": 256,
+    "model": "qwen2.5-0.5b",
+    "node": "d3168",
+    "sif": "vllm.sif",
+    "vllm_args": "--max-num-batched-tokens 2048 --max-num-seqs 256 --max-model-len 8192 --generation-config vllm"
+  },
+  "microbench": {
+    "capability": [
+      8,
+      6
+    ],
+    "copy_bandwidth": 719866427655.4779,
+    "dtype": "torch.bfloat16",
+    "gemm_flops": 126887327586606.89,
+    "gemm_flops_by_n": {
+      "4096": 126887327586606.89,
+      "8192": 112222009972859.58
+    },
+    "name": "NVIDIA RTX A6000"
+  },
+  "model": "qwen2.5-0.5b",
+  "plan": [
+    {
+      "frac": 0.4,
+      "kind": "conv",
+      "name": "conv_r15.3",
+      "rate": 15.27,
+      "requests": 1200,
+      "sat": 38.175304016916726,
+      "seconds": 78.5199738048461
+    },
+    {
+      "frac": 0.7,
+      "kind": "conv",
+      "name": "conv_r26.7",
+      "rate": 26.723,
+      "requests": 1200,
+      "sat": 38.175304016916726,
+      "seconds": 44.867716947947464
+    },
+    {
+      "frac": 0.9,
+      "kind": "conv",
+      "name": "conv_r34.4",
+      "rate": 34.358,
+      "requests": 1200,
+      "sat": 38.175304016916726,
+      "seconds": 34.8972582804587
+    },
+    {
+      "frac": 0.5,
+      "kind": "code",
+      "name": "code_r8.2",
+      "rate": 8.195,
+      "requests": 737,
+      "sat": 16.390605756967293,
+      "seconds": 89.81086028065894
+    },
+    {
+      "frac": 0.85,
+      "kind": "code",
+      "name": "code_r13.9",
+      "rate": 13.932,
+      "requests": 1200,
+      "sat": 16.390605756967293,
+      "seconds": 86.06086706861902
+    }
+  ],
+  "server": {
+    "available_kv_gib": 41.0,
+    "cudagraph_gib": 0.39,
+    "kv_tokens": 3543040,
+    "vllm_version": "0.34.0",
+    "weights_gib": 0.93
+  },
+  "windows": {
+    "code_r13.9": [
+      1795373773.6968322,
+      1795373866.324026
+    ],
+    "code_r8.2": [
+      1795373677.732986,
+      1795373771.5587366
+    ],
+    "conv_r15.3": [
+      1795373473.6800277,
+      1795373556.023309
+    ],
+    "conv_r26.7": [
+      1795373558.3815684,
+      1795373613.9264004
+    ],
+    "conv_r34.4": [
+      1795373616.1710782,
+      1795373675.389907
+    ],
+    "profile": [
+      1795373283.8647113,
+      1795373453.2490857
+    ],
+    "smoke": [
+      1795373276.5267146,
+      1795373281.4249058
+    ]
+  }
+}

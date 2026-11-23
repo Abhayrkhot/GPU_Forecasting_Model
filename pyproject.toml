@@ -1,0 +1,77 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gpufc"
+version = "0.1.0"
+description = "Forecast LLM serving performance (step time, TTFT/TPOT, capacity under SLO) on models and GPUs you have not profiled"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Abhay Khot" }]
+keywords = ["llm", "inference", "gpu", "performance-model", "capacity-planning", "vllm"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24",
+    "batchsim @ git+https://github.com/Abhayrkhot/Continuous-Batching-Simulator@61725ca",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.7"]
+ml = ["scikit-learn>=1.3"]
+dev = [
+    "pytest>=8",
+    "pytest-cov>=5",
+    "hypothesis>=6.100",
+    "scikit-learn>=1.3",
+    "matplotlib>=3.7",
+    "ruff>=0.6",
+    "mypy>=1.10",
+]
+
+[project.scripts]
+gpufc = "gpufc.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Abhayrkhot/GPU_Forecasting_Model"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gpufc"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "SIM", "RUF", "NPY"]
+ignore = ["RUF001", "RUF002", "RUF003", "B905"]
+
+[tool.ruff.lint.per-file-ignores]
+"bench/**" = ["N802"]
+"scripts/**" = ["E402"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+files = ["src/gpufc"]
+
+[[tool.mypy.overrides]]
+module = ["matplotlib", "matplotlib.*", "sklearn", "sklearn.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["gpufc"]
+omit = ["*/plots.py"]

@@ -1,0 +1,158 @@
+{
+ "qwen2.5-0.5b|a100-80g": {
+  "frontend_latency": 0.0038926514972559174,
+  "idle_launch_latency": 0.001607238433793767
+ },
+ "qwen2.5-0.5b|a6000": {
+  "frontend_latency": 0.0037620713985772464,
+  "idle_launch_latency": 0.001207054345951225
+ },
+ "qwen2.5-0.5b|h200": {
+  "frontend_latency": 0.008924090616994656,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-0.5b|h200-nvl": {
+  "frontend_latency": 0.004962792445411963,
+  "idle_launch_latency": 0.00019968569757755107
+ },
+ "qwen2.5-1.5b|a100-80g": {
+  "frontend_latency": 0.004137414487499543,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-1.5b|a6000": {
+  "frontend_latency": 0.003901398595886729,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-1.5b|h200": {
+  "frontend_latency": 0.0053032147219820676,
+  "idle_launch_latency": 0.0026879166007664915
+ },
+ "qwen2.5-14b|a100-80g": {
+  "frontend_latency": 0.019194405106437724,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-14b|a6000": {
+  "frontend_latency": 0.0380553892188672,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-14b|h200": {
+  "frontend_latency": 0.0051853157277047535,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-32b|a100-80g": {
+  "frontend_latency": 0.03587405329826443,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-32b|h200": {
+  "frontend_latency": 0.012420511112715998,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-3b|a100-80g": {
+  "frontend_latency": 0.005464287401595928,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-3b|a6000": {
+  "frontend_latency": 0.00867962945634301,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-3b|h200": {
+  "frontend_latency": 0.004629145488056704,
+  "idle_launch_latency": 0.0045871813240113
+ },
+ "qwen2.5-3b|h200-nvl": {
+  "frontend_latency": 0.002223596005403748,
+  "idle_launch_latency": 0.0029472281827415403
+ },
+ "qwen2.5-7b|a100-80g": {
+  "frontend_latency": 0.006433425105409701,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-7b|a6000": {
+  "frontend_latency": 0.01207499131611732,
+  "idle_launch_latency": 0.0
+ },
+ "qwen2.5-7b|h200": {
+  "frontend_latency": 0.0031916874319674847,
+  "idle_launch_latency": 0.001570667474795116
+ },
+ "qwen3-0.6b|a100-80g": {
+  "frontend_latency": 0.005946280785750071,
+  "idle_launch_latency": 0.0008479237714463135
+ },
+ "qwen3-0.6b|a6000": {
+  "frontend_latency": 0.002578531254221191,
+  "idle_launch_latency": 0.0031090196763191406
+ },
+ "qwen3-0.6b|h200": {
+  "frontend_latency": 0.006642356651939511,
+  "idle_launch_latency": 0.0012445101048346088
+ },
+ "qwen3-1.7b|a100-80g": {
+  "frontend_latency": 0.004035443421277511,
+  "idle_launch_latency": 0.0002522340695749409
+ },
+ "qwen3-1.7b|a6000": {
+  "frontend_latency": 0.0040488679525042676,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-1.7b|h200": {
+  "frontend_latency": 0.0036095236087023315,
+  "idle_launch_latency": 0.0033301383537935915
+ },
+ "qwen3-14b|a100-80g": {
+  "frontend_latency": 0.018415125798867116,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-14b|a6000": {
+  "frontend_latency": 0.03684258949301021,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-14b|h200": {
+  "frontend_latency": 0.0043864718035664,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-30b-a3b|a100-80g": {
+  "frontend_latency": 0.01665094736495118,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-30b-a3b|h200": {
+  "frontend_latency": 0.01514745981094709,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-32b|a100-80g": {
+  "frontend_latency": 0.03664350322326698,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-32b|h200": {
+  "frontend_latency": 0.008735618691810627,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-4b|a100-80g": {
+  "frontend_latency": 0.006402347372806698,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-4b|a6000": {
+  "frontend_latency": 0.010981982997539538,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-4b|h200": {
+  "frontend_latency": 0.0028116474742656723,
+  "idle_launch_latency": 0.004113270000442223
+ },
+ "qwen3-8b|a100-80g": {
+  "frontend_latency": 0.011205132364675317,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-8b|a6000": {
+  "frontend_latency": 0.015278389727796576,
+  "idle_launch_latency": 0.0
+ },
+ "qwen3-8b|h200": {
+  "frontend_latency": 0.0031649477666381414,
+  "idle_launch_latency": 0.0019114841148632142
+ },
+ "qwen3-8b|h200-nvl": {
+  "frontend_latency": 0.0023332714230456103,
+  "idle_launch_latency": 0.00018406281634952837
+ }
+}

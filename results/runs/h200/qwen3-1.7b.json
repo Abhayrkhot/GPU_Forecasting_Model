@@ -1,0 +1,117 @@
+{
+  "gpu": "h200",
+  "meta": {
+    "cpu": "INTEL(R) XEON(R) GOLD 6548Y+",
+    "dtype": "bfloat16",
+    "gpu_key": "h200",
+    "gpu_name": "NVIDIA H200",
+    "hf_id": "Qwen/Qwen3-1.7B",
+    "job": "12065187",
+    "max_model_len": 8192,
+    "max_num_batched_tokens": 8192,
+    "max_num_seqs": 1024,
+    "model": "qwen3-1.7b",
+    "node": "d4052",
+    "sif": "vllm.sif",
+    "vllm_args": "--max-num-batched-tokens 8192 --max-num-seqs 1024 --max-model-len 8192 --generation-config vllm"
+  },
+  "microbench": {
+    "capability": [
+      9,
+      0
+    ],
+    "copy_bandwidth": 4259257189673.598,
+    "dtype": "torch.bfloat16",
+    "gemm_flops": 782913102472958.9,
+    "gemm_flops_by_n": {
+      "4096": 777069827464664.6,
+      "8192": 782913102472958.9
+    },
+    "name": "NVIDIA H200"
+  },
+  "model": "qwen3-1.7b",
+  "plan": [
+    {
+      "frac": 0.4,
+      "kind": "conv",
+      "name": "conv_r24.4",
+      "rate": 24.376,
+      "requests": 1200,
+      "sat": 60.94070924211448,
+      "seconds": 49.18772563176895
+    },
+    {
+      "frac": 0.7,
+      "kind": "conv",
+      "name": "conv_r42.7",
+      "rate": 42.658,
+      "requests": 1200,
+      "sat": 60.94070924211448,
+      "seconds": 28.107271789582256
+    },
+    {
+      "frac": 0.9,
+      "kind": "conv",
+      "name": "conv_r54.8",
+      "rate": 54.847,
+      "requests": 1200,
+      "sat": 60.94070924211448,
+      "seconds": 21.86081280653454
+    },
+    {
+      "frac": 0.5,
+      "kind": "code",
+      "name": "code_r41.4",
+      "rate": 41.37,
+      "requests": 1200,
+      "sat": 82.74085499715908,
+      "seconds": 28.982354363065024
+    },
+    {
+      "frac": 0.85,
+      "kind": "code",
+      "name": "code_r70.3",
+      "rate": 70.33,
+      "requests": 1200,
+      "sat": 82.74085499715908,
+      "seconds": 17.04820133655624
+    }
+  ],
+  "server": {
+    "available_kv_gib": 119.79,
+    "cudagraph_gib": 0.47,
+    "kv_tokens": 1116160,
+    "vllm_version": "0.34.0",
+    "weights_gib": 3.22
+  },
+  "windows": {
+    "code_r41.4": [
+      1795374889.8292344,
+      1795374923.6506712
+    ],
+    "code_r70.3": [
+      1795374925.746451,
+      1795374952.1077838
+    ],
+    "conv_r24.4": [
+      1795374769.3040237,
+      1795374821.8851006
+    ],
+    "conv_r42.7": [
+      1795374823.9989579,
+      1795374856.6411326
+    ],
+    "conv_r54.8": [
+      1795374858.7619514,
+      1795374887.6371105
+    ],
+    "profile": [
+      1795374551.7222438,
+      1795374752.3657928
+    ],
+    "smoke": [
+      1795374544.9959297,
+      1795374549.6530337
+    ]
+  }
+}

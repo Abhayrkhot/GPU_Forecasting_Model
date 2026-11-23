@@ -1,0 +1,335 @@
+[
+ {
+  "gpu": "a100-80g",
+  "model": "qwen2.5-0.5b",
+  "steps": 4443,
+  "step_ms": 16.8641,
+  "efficiency": 0.6907174705820998,
+  "residual_efficiency": 0.6907174705820998,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen2.5-1.5b",
+  "steps": 3099,
+  "step_ms": 36.960100000000004,
+  "efficiency": 0.7628643703176374,
+  "residual_efficiency": 0.7628643703176374,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen2.5-14b",
+  "steps": 545,
+  "step_ms": 247.2689,
+  "efficiency": 0.875365146622315,
+  "residual_efficiency": 0.875365146622315,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen2.5-32b",
+  "steps": 158,
+  "step_ms": 513.5665,
+  "efficiency": 0.9053634621193357,
+  "residual_efficiency": 0.9053634621193357,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen2.5-3b",
+  "steps": 1976,
+  "step_ms": 70.82215,
+  "efficiency": 0.7393153810838287,
+  "residual_efficiency": 0.7393153810838287,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen2.5-7b",
+  "steps": 1167,
+  "step_ms": 129.787,
+  "efficiency": 0.8297896235368549,
+  "residual_efficiency": 0.8297896235368549,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen3-0.6b",
+  "steps": 3657,
+  "step_ms": 25.3022,
+  "efficiency": 0.7266603491361303,
+  "residual_efficiency": 0.7266603491361303,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen3-1.7b",
+  "steps": 2404,
+  "step_ms": 43.23495,
+  "efficiency": 0.7824041889898927,
+  "residual_efficiency": 0.7824041889898927,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen3-14b",
+  "steps": 612,
+  "step_ms": 242.46810000000002,
+  "efficiency": 0.8689875568352616,
+  "residual_efficiency": 0.8689875568352616,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen3-32b",
+  "steps": 157,
+  "step_ms": 525.6701,
+  "efficiency": 0.9023275840940631,
+  "residual_efficiency": 0.9023275840940631,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen3-4b",
+  "steps": 1211,
+  "step_ms": 92.803,
+  "efficiency": 0.7783451782803492,
+  "residual_efficiency": 0.7783451782803492,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a100-80g",
+  "model": "qwen3-8b",
+  "steps": 770,
+  "step_ms": 144.13905,
+  "efficiency": 0.8269373911230685,
+  "residual_efficiency": 0.8269373911230685,
+  "sustained_weight": 0.0
+ },
+ {
+  "gpu": "a6000",
+  "model": "qwen2.5-0.5b",
+  "steps": 3858,
+  "step_ms": 31.2151,
+  "efficiency": 0.7290916812366783,
+  "residual_efficiency": 0.754252442175284,
+  "sustained_weight": 0.253452227098475
+ },
+ {
+  "gpu": "a6000",
+  "model": "qwen2.5-1.5b",
+  "steps": 1825,
+  "step_ms": 79.1981,
+  "efficiency": 0.7080822819950574,
+  "residual_efficiency": 0.8065427417088569,
+  "sustained_weight": 0.253452227098475
+ },
+ {
+  "gpu": "a6000",
+  "model": "qwen2.5-14b",
+  "steps": 209,
+  "step_ms": 517.931,
+  "efficiency": 0.8234947073282602,
+  "residual_efficiency": 1.0391197405388914,
+  "sustained_weight": 0.253452227098475
+ },
+ {
+  "gpu": "a6000",
+  "model": "qwen2.5-3b",
+  "steps": 1112,
+  "step_ms": 147.24300000000002,
+  "efficiency": 0.7160567794743097,
+  "residual_efficiency": 0.8725273604015379,
+  "sustained_weight": 0.253452227098475
+ },
+ {
+  "gpu": "a6000",
+  "model": "qwen2.5-7b",
+  "steps": 867,
+  "step_ms": 282.52290000000005,
+  "efficiency": 0.7640140607502741,
+  "residual_efficiency": 0.9455546635625459,
+  "sustained_weight": 0.253452227098475
+ },
+ {
+  "gpu": "a6000",
+  "model": "qwen3-0.6b",
+  "steps": 1862,
+  "step_ms": 46.45505,
+  "efficiency": 0.8458754808050781,
+  "residual_efficiency": 0.8885364722639347,
+  "sustained_weight": 0.253452227098475
+ },
+ {
+  "gpu": "a6000",
+  "model": "qwen3-1.7b",
+  "steps": 1008,
+  "step_ms": 82.25295,
+  "efficiency": 0.7905115471237928,
+  "residual_efficiency": 0.925727659573023,
+  "sustained_weight": 0.253452227098475
+ },
+ {
+  "gpu": "a6000",
+  "model": "qwen3-14b",
+  "steps": 190,
+  "step_ms": 512.6659,
+  "efficiency": 0.8070468288814248,
+  "residual_efficiency": 1.0130330142735793,
+  "sustained_weight": 0.253452227098475
+ },
+ {
+  "gpu": "a6000",
+  "model": "qwen3-4b",
+  "steps": 569,
+  "step_ms": 181.53379999999999,
+  "efficiency": 0.7905590503866958,
+  "residual_efficiency": 0.9860347046097602,
+  "sustained_weight": 0.253452227098475
+ },
+ {
+  "gpu": "a6000",
+  "model": "qwen3-8b",
+  "steps": 434,
+  "step_ms": 297.4831,
+  "efficiency": 0.7845498191902721,
+  "residual_efficiency": 0.9771288047007459,
+  "sustained_weight": 0.253452227098475
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen2.5-0.5b",
+  "steps": 1763,
+  "step_ms": 11.4222,
+  "efficiency": 0.7796928919604234,
+  "residual_efficiency": 0.7863366545408854,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen2.5-1.5b",
+  "steps": 1644,
+  "step_ms": 40.90045,
+  "efficiency": 0.7466401827813178,
+  "residual_efficiency": 0.7789212435659529,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen2.5-14b",
+  "steps": 626,
+  "step_ms": 211.56740000000002,
+  "efficiency": 0.6894461893791521,
+  "residual_efficiency": 0.7679915743770851,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen2.5-32b",
+  "steps": 300,
+  "step_ms": 422.65545,
+  "efficiency": 0.6800653760691049,
+  "residual_efficiency": 0.7564821250018747,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen2.5-3b",
+  "steps": 1628,
+  "step_ms": 81.51445,
+  "efficiency": 0.7148948787535933,
+  "residual_efficiency": 0.7814057539563342,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen2.5-7b",
+  "steps": 1157,
+  "step_ms": 113.816,
+  "efficiency": 0.6954203888020151,
+  "residual_efficiency": 0.7689134389444792,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen3-0.6b",
+  "steps": 1593,
+  "step_ms": 22.1701,
+  "efficiency": 0.8083292408576804,
+  "residual_efficiency": 0.8213590927133586,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen3-1.7b",
+  "steps": 1560,
+  "step_ms": 48.346399999999996,
+  "efficiency": 0.7234010634499471,
+  "residual_efficiency": 0.7560165427489334,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen3-14b",
+  "steps": 650,
+  "step_ms": 202.42585,
+  "efficiency": 0.6843249857201875,
+  "residual_efficiency": 0.7616580166869099,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen3-32b",
+  "steps": 292,
+  "step_ms": 456.19405,
+  "efficiency": 0.6727295388581237,
+  "residual_efficiency": 0.747459311258121,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen3-4b",
+  "steps": 1318,
+  "step_ms": 86.6405,
+  "efficiency": 0.700475926593691,
+  "residual_efficiency": 0.7680411225831836,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200",
+  "model": "qwen3-8b",
+  "steps": 969,
+  "step_ms": 118.9251,
+  "efficiency": 0.6977741505675003,
+  "residual_efficiency": 0.775141923563579,
+  "sustained_weight": 0.14875809798221784
+ },
+ {
+  "gpu": "h200-nvl",
+  "model": "qwen2.5-0.5b",
+  "steps": 1642,
+  "step_ms": 13.0875,
+  "efficiency": 0.9406042214291755,
+  "residual_efficiency": 0.9582271825513694,
+  "sustained_weight": 0.14842177874251472
+ },
+ {
+  "gpu": "h200-nvl",
+  "model": "qwen2.5-3b",
+  "steps": 1608,
+  "step_ms": 87.88455,
+  "efficiency": 0.800969033498109,
+  "residual_efficiency": 0.891854021878144,
+  "sustained_weight": 0.14842177874251472
+ },
+ {
+  "gpu": "h200-nvl",
+  "model": "qwen3-8b",
+  "steps": 915,
+  "step_ms": 122.80199999999999,
+  "efficiency": 0.7782740608931065,
+  "residual_efficiency": 0.8752192863236352,
+  "sustained_weight": 0.14842177874251472
+ }
+]
